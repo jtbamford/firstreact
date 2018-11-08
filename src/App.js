@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+//import Button from './Button';
+//import './Button.css';
 
 class App extends Component {
+
+  output = () => {
+  console.log("Hello");
+}
+
   render() {
     return (
       <div className="App">
@@ -17,12 +24,19 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+          Learn React
           </a>
+          {this.output()}
+    {/*  <Button label="he" /> */}
+  {/* bootstrap button styling */}
+    <div style={{position:"relative", right:"100px"}}>
+          <button className="btn btn-danger btn-lg">Working</button>
+          </div>
         </header>
       </div>
     );
   }
+
 }
 
 export default App;
